@@ -7,7 +7,7 @@ export async function POST({ request,cookies }) {
         path:"/",
         httpOnly: true,
         sameSite: 'strict',
-        maxAge: 60
+        maxAge: 60*60
     })
     return json(id)
 }    
