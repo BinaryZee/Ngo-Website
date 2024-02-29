@@ -4,7 +4,14 @@
 <label for="">password</label>
 <input type="password" name="password" placeholder="Enter the password" bind:value={pass} required>
 <button on:click={login}>submit</button>
-
+<div></div>
+<label for="">newUser:</label>
+<a href="/signup">signup</a>
+<style>
+	a{
+		color: blue;
+	}
+</style>
 <script>
 	import {auth} from "$lib/firebase/firebase.client"
 	import {signInWithEmailAndPassword} from "firebase/auth"
